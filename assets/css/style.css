@@ -347,10 +347,16 @@ strong { font-weight: 600; }
 }
 .placements li:not(:last-child)::after { content: "/"; color: var(--muted); font-weight: 300; margin: 0 .32em; }
 .placements__more { color: var(--muted); }
+.sync__series { grid-column: 1 / -1; border-top: 1px solid var(--line); }
+.sync__row { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) auto; gap: var(--pad); align-items: end; margin-top: 18px; }
+.sync__row .sync__name { margin-top: 0; }
+.sync__row .sync__link { margin-top: 0; padding-top: 0; justify-self: end; align-self: end; white-space: nowrap; }
 @media (max-width: 860px) {
   .sync { grid-template-columns: 1fr; }
   .sync__lib { padding-right: 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .sync__tv { padding-left: 0; }
+  .sync__row { grid-template-columns: 1fr; gap: 10px; }
+  .sync__row .sync__link { justify-self: start; padding-top: 10px; }
 }
 
 /* ---------- Release ---------- */
