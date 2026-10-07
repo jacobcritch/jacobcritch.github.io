@@ -443,6 +443,7 @@ strong { font-weight: 600; }
 /* ---------- Responsive ---------- */
 @media (max-width: 1100px) {
   .credits { grid-template-columns: repeat(2, 1fr); }
+  .credit--more { grid-column: span 2; }
   .venture { grid-template-columns: 90px 1fr; row-gap: 10px; }
   .venture__outcome { grid-column: 2; }
   .venture__link { grid-column: 2; justify-self: start; }
@@ -485,7 +486,7 @@ strong { font-weight: 600; }
   .stat__num { font-size: clamp(40px, 12vw, 64px); }
   .stat__note { font-size: 12.5px; }
   .credits { grid-template-columns: 1fr; }
-  .credit--feature, .credit--wide { grid-column: auto; }
+  .credit--feature, .credit--wide, .credit--more { grid-column: auto; }
   .credit--more .credit__box { min-height: 200px; }
   .credit > a { min-height: 220px; }
   .venture { grid-template-columns: 1fr; }
